@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { useCart } from "../context/CartContext";
 import flower3 from "../assets/flower 3.jpg";
 import flower4 from "../assets/flower 4.jpg";
 import flower5 from "../assets/flower 5.jpg";
@@ -118,19 +119,18 @@ const items: Item[] = [
 const FlowersAndGifts = () => {
   const [selected, setSelected] = useState<Item | null>(null);
   const [qty, setQty] = useState(1);
-  const [cart, setCart] = useState<{ item: Item; qty: number }[]>([]);
   const [showConfirm, setShowConfirm] = useState<string | null>(null);
+  const { cart, addToCart: addToCartContext } = useCart();
 
-  function addToCart(item: Item, q = 1) {
-    setCart((prev) => {
-      const existing = prev.find((p) => p.item.id === item.id);
-      if (existing) {
-        return prev.map((p) =>
-          p.item.id === item.id ? { ...p, qty: p.qty + q } : p
-        );
-      }
-      return [...prev, { item, qty: q }];
-    });
+  function handleAddToCart(item: Item, q = 1) {
+    addToCartContext({
+      id: item.id,
+      type: item.type,
+      title: item.title,
+      price: item.price,
+      image: item.image,
+      short: item.short,
+    }, q);
     setShowConfirm(`${item.title} added to cart`);
     setTimeout(() => setShowConfirm(null), 2500);
   }
@@ -218,7 +218,7 @@ const FlowersAndGifts = () => {
                           Quick view
                         </button>
                         <button
-                          onClick={() => addToCart(it, 1)}
+                          onClick={() => handleAddToCart(it, 1)}
                           className="px-3 py-1 rounded-full border border-green-700 text-green-700 text-sm hover:bg-green-100 transition"
                         >
                           Add
@@ -272,7 +272,7 @@ const FlowersAndGifts = () => {
                           Quick view
                         </button>
                         <button
-                          onClick={() => addToCart(it, 1)}
+                          onClick={() => handleAddToCart(it, 1)}
                           className="px-3 py-1 rounded-full border border-green-700 text-green-700 text-sm hover:bg-green-100 transition"
                         >
                           Add
@@ -346,7 +346,7 @@ const FlowersAndGifts = () => {
                 <div className="flex gap-3">
                   <button
                     onClick={() => {
-                      addToCart(selected, qty);
+                      handleAddToCart(selected, qty);
                       setSelected(null);
                     }}
                     className="flex-1 px-4 py-2 rounded-full bg-green-700 text-white font-medium hover:bg-green-800 transition"
