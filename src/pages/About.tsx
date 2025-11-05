@@ -1,3 +1,6 @@
+import flower2 from "../assets/flower 2.jpg";
+import shopArea from "../assets/shop area.jpg";
+
 const About = () => {
   return (
     <section className="bg-pink-50 min-h-screen flex flex-col items-center px-6 pt-24 pb-16 text-center md:text-left font-sans">
@@ -24,12 +27,12 @@ const About = () => {
       {/* Image Section */}
       <div className="relative flex flex-col md:flex-row justify-center items-center gap-6 mb-12">
         <img
-          src="src/assets/flower 2.jpg"
+          src={flower2}
           alt="Flower arrangement"
           className="w-72 h-72 object-cover rounded-2xl shadow-lg border-4 border-white transform hover:scale-105 transition"
         />
         <img
-          src="src/assets/shop area.jpg"
+          src={shopArea}
           alt="shop area"
           className="w-72 h-72 object-cover rounded-2xl shadow-lg border-4 border-white transform md:-translate-y-6 hover:scale-105 transition"
         />

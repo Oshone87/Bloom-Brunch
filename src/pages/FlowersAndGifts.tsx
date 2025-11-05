@@ -1,4 +1,13 @@
 import { useState } from "react";
+import flower3 from "../assets/flower 3.jpg";
+import flower4 from "../assets/flower 4.jpg";
+import flower5 from "../assets/flower 5.jpg";
+import flower6 from "../assets/flower 6.jpg";
+import flower7 from "../assets/flower 7.jpg";
+import gift1 from "../assets/gift 1.jpg";
+import gift2 from "../assets/gift 2.jpg";
+import gift3 from "../assets/gift 3.jpg";
+import gift4 from "../assets/gift 4.jpg";
 
 type Item = {
   id: string;
@@ -17,8 +26,8 @@ const items: Item[] = [
     type: "flower",
     title: "Bloom & Brunch Signature Bouquet",
     price: 45,
-    image: "src/assets/flower 3.jpg", // replace with real image path
-    short: "Mixed roses, eucalyptus & baby’s breath",
+    image: flower3,
+    short: "Mixed roses, eucalyptus & baby's breath",
     long:
       "A romantic blend of seasonal roses, soft eucalyptus, and delicate baby’s breath — hand-tied and wrapped with artisanal paper.",
   },
@@ -27,7 +36,7 @@ const items: Item[] = [
     type: "flower",
     title: "Sunshine Bouquet",
     price: 40,
-    image: "src/assets/flower 4.jpg",
+    image: flower4,
     short: "Yellow tulips, daisies & sunflowers",
     long:
       "A cheerful bright bouquet packed with sunny tones — perfect for celebrations and pick-me-ups.",
@@ -37,7 +46,7 @@ const items: Item[] = [
     type: "flower",
     title: "Romantic Roses Box",
     price: 60,
-    image: "src/assets/flower 5.jpg",
+    image: flower5,
     short: "Red & pink roses in a velvet box",
     long:
       "Classic romance in a luxurious square velvet box — arranged to present beautifully and last longer.",
@@ -47,7 +56,7 @@ const items: Item[] = [
     type: "flower",
     title: "Pastel Garden",
     price: 55,
-    image: "src/assets/flower 6.jpg",
+    image: flower6,
     short: "Peonies, hydrangeas & white roses",
     long:
       "Soft peonies and hydrangeas combined with pristine white roses for an elegant, dreamy arrangement.",
@@ -57,7 +66,7 @@ const items: Item[] = [
     type: "flower",
     title: "Minimalist Greens",
     price: 35, 
-    image: "src/assets/flower 7.jpg",
+    image: flower7,
     short: "Eucalyptus & white lilies",
     long:
       "Calm and refined — a modern arrangement of eucalyptus and white lilies for a clean, natural feel.",
@@ -69,7 +78,7 @@ const items: Item[] = [
     type: "gift",
     title: "Gift Box (mini arrangement + candle + card)",
     price: 30,
-    image: "src/assets/gift 1.jpg",
+    image: gift1,
     short: "Hand-curated gift box",
     long:
       "A thoughtful set with a mini flower arrangement, a scented candle, and a handwritten card. Perfect for appreciation and celebrations.",
@@ -79,7 +88,7 @@ const items: Item[] = [
     type: "gift",
     title: "Scented Candle",
     price: 12,
-    image: "src/assets/gift 2.jpg",
+    image: gift2,
     short: "Lavender • Vanilla • Citrus",
     long:
       "Soy wax candles scented with natural essential oils — choose lavender, vanilla or citrus for a warm, cozy scent.",
@@ -89,7 +98,7 @@ const items: Item[] = [
     type: "gift",
     title: "Handwritten Note Card",
     price: 4,
-    image: "src/assets/gift 3.jpg",
+    image: gift3,
     short: "Personal message card",
     long:
       "A high-quality card with your personal message hand-written in ink. Makes every gift more personal.",
@@ -99,7 +108,7 @@ const items: Item[] = [
     type: "gift",
     title: "Mini Chocolate Box",
     price: 9,
-    image: "src/assets/gift 4.jpg",
+    image: gift4,
     short: "Assorted mini chocolates",
     long:
       "A curated selection of mini chocolates — great as an add-on or a sweet standalone gift.",

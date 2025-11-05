@@ -1,25 +1,39 @@
 import { useState } from "react";
+import menu1 from "../assets/menu 1.jpg";
+import menu2 from "../assets/menu 2.jpg";
+import menu3 from "../assets/menu 3.jpg";
+import menu4 from "../assets/menu 4.jpg";
+import menu5 from "../assets/menu 5.jpg";
+import menu6 from "../assets/menu 6.jpg";
+import menu7 from "../assets/menu 7.jpg";
+import menu8 from "../assets/menu 8.jpg";
+import menu9 from "../assets/menu 9.jpg";
+import menu10 from "../assets/menu 10.jpg";
+import menu11 from "../assets/menu 11.jpg";
+import menu12 from "../assets/menu 12.jpg";
+import menu13 from "../assets/menu 13.jpg";
+import menu14 from "../assets/menu 14.jpg";
 
 const menuData = {
   "Main Dishes": [
-    { name: "Avocado Toast with Poached Egg", image: "src/assets/menu 1.jpg" },
-    { name: "Pancake Stack with Maple Syrup", image: "src/assets/menu 2.jpg" },
-    { name: "Classic French Toast", image: "src/assets/menu 3.jpg" },
-    { name: "Grilled Chicken Sandwich", image: "src/assets/menu 4.jpg" },
-    { name: "Veggie Omelette", image: "src/assets/menu 5.jpg" },
+    { name: "Avocado Toast with Poached Egg", image: menu1 },
+    { name: "Pancake Stack with Maple Syrup", image: menu2 },
+    { name: "Classic French Toast", image: menu3 },
+    { name: "Grilled Chicken Sandwich", image: menu4 },
+    { name: "Veggie Omelette", image: menu5 },
   ],
   Drinks: [
-    { name: "Iced Latte", image: "src/assets/menu 6.jpg" },
-    { name: "Fresh Orange Juice", image: "src/assets/menu 7.jpg" },
-    { name: "Matcha Latte", image: "src/assets/menu 8.jpg" },
-    { name: "Cappuccino", image: "src/assets/menu 9.jpg" },
-    { name: "Iced Tea", image: "src/assets/menu 10.jpg" },
+    { name: "Iced Latte", image: menu6 },
+    { name: "Fresh Orange Juice", image: menu7 },
+    { name: "Matcha Latte", image: menu8 },
+    { name: "Cappuccino", image: menu9 },
+    { name: "Iced Tea", image: menu10 },
   ],
   Pastries: [
-    { name: "Croissants", image: "src/assets/menu 11.jpg" },
-    { name: "Cinnamon Rolls", image: "src/assets/menu 12.jpg" },
-    { name: "Blueberry Muffins", image: "src/assets/menu 13.jpg" },
-    { name: "Chocolate Chip Cookies", image: "src/assets/menu 14.jpg" },
+    { name: "Croissants", image: menu11 },
+    { name: "Cinnamon Rolls", image: menu12 },
+    { name: "Blueberry Muffins", image: menu13 },
+    { name: "Chocolate Chip Cookies", image: menu14 },
   ],
 };
 

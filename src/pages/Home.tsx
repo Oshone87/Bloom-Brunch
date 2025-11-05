@@ -1,4 +1,7 @@
 import { Link } from "react-router-dom";
+import orangeJuice from "../assets/orange juice.jpg";
+import mainFlower from "../assets/main flower.jpg";
+import mainDish from "../assets/main dish.jpg";
 
 const Home = () => {
   return (
@@ -35,21 +38,21 @@ const Home = () => {
       <div className="mt-12 relative md:min-h-[22rem] flex flex-col items-center space-y-6 md:space-y-0 md:flex-row md:justify-center">
         {/* Left Image */}
         <img
-          src="src/assets/orange juice.jpg"
+          src={orangeJuice}
           alt="orange juice"
           className="w-64 h-64 object-cover rounded-2xl shadow-xl transform border-4 border-white z-20 md:absolute md:top-14 md:left-[90%] transition-transform duration-300 hover:scale-105"
         />
 
         {/* Middle Image */}
         <img
-          src="src/assets/main flower.jpg"
+          src={mainFlower}
           alt="main flower"
           className="w-72 h-72 object-cover rounded-2xl shadow-xl transform border-4 border-white z-10 transition-transform duration-300 hover:scale-105"
         />
 
         {/* Right Image */}
         <img
-          src="src/assets/main dish.jpg"
+          src={mainDish}
           alt="main dish"
           className="w-64 h-64 object-cover rounded-2xl shadow-xl transform border-4 border-white z-0 md:absolute md:top-12 md:right-[90%] transition-transform duration-300 hover:scale-105 mt-6 md:mt-0"
         />
